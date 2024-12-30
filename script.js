@@ -1,4 +1,4 @@
-class Person1 {
+class Person{
 	constructor(name,age){
 		this.name=name,
 		this.age=age
@@ -9,7 +9,7 @@ class Person1 {
 	}
 }
 
-class Employee1 extends Person1{
+class Employee extends Person{
 	constructor(name, age, jobTitle){
 		super(name,age)
 		this.jobTitle = jobTitle

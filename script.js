@@ -1,4 +1,4 @@
-class Person {
+class Person1 {
 	constructor(name,age){
 		this.name=name,
 		this.age=age
@@ -9,7 +9,7 @@ class Person {
 	}
 }
 
-class Employee extends Person{
+class Employee1 extends Person1{
 	constructor(name, age, jobTitle){
 		super(name,age)
 		this.jobTitle = jobTitle
@@ -21,13 +21,13 @@ class Employee extends Person{
 }
 
 function Person(name, age){
-	let person1 =new Person(name, age)
+	let person1 =new Person1(name, age)
 	console.log(person1.greet());
 }
 
 
 function Employee(name, age, jobTitle){
-	let emp = new Employee(name, age, jobTitle);
+	let emp = new Employee1(name, age, jobTitle);
 	console.log(emp.jobGreet());
 }
 // Do not change code below this line

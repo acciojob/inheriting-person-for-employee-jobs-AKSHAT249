@@ -9,9 +9,10 @@ class Person{
 	}
 }
 
-class Employee extends Person{
+class Employee extends Person {
 	constructor(name, age, jobTitle){
-		super(name,age)
+		this.name = name,
+		this.age = age,
 		this.jobTitle = jobTitle
 	}
 

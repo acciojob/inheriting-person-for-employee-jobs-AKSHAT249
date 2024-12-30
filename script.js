@@ -20,6 +20,16 @@ class Employee extends Person{
 	}
 }
 
+function Person(name, age){
+	let person1 =new Person(name, age)
+	console.log(person1.greet());
+}
+
+
+function Employee(name, age, jobTitle){
+	let emp = new Employee(name, age, jobTitle);
+	console.log(emp.jobGreet());
+}
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;

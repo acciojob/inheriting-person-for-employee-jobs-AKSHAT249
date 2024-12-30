@@ -5,7 +5,7 @@ class Person1 {
 	}
 
 	greet(){
-		return `Hello, my name is ${this.name}, I am ${this.age} years old.`
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 	}
 }
 
@@ -16,20 +16,14 @@ class Employee1 extends Person1{
 	}
 
 	jobGreet(){
-		return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`)
 	}
 }
 
-function Person(name, age){
-	let person1 =new Person1(name, age)
-	console.log(person1.greet());
-}
 
 
-function Employee(name, age, jobTitle){
-	let emp = new Employee1(name, age, jobTitle);
-	console.log(emp.jobGreet());
-}
+
+
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
